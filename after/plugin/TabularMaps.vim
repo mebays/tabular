@@ -70,5 +70,7 @@ AddTabularPattern! pascal_assign /:=/l1
 
 AddTabularPattern! trailing_c_comments /\/\*\|\*\/\|\/\//l1
 
+AddTabularPattern! colon_align /^[^:]*\zs:/l0c1l0
+
 let &cpo = s:save_cpo
 unlet s:save_cpo
